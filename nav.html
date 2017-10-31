@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>BCIT E E E EASE</title>
+		<link rel="stylesheet" type="text/css" href="style.css"/> 
+    </head>
+    
+    <body style='overflow: hidden'>
+
+    <div id="navBar">
+        <div class='navIcons-orange'>       
+                <!-- ORANGE ICONS (TURN ORANGE WHEN CLICKED) -->
+                
+        <img id="home2" src="nav-icons/home2.svg" />
+        <img id="connections2" src="nav-icons/connections2.svg"/>
+        <img id="chat2" src="nav-icons/chat2.svg" />
+        <img id="profile2" src="nav-icons/profile2.svg" />
+        <img id="settings2" src="nav-icons/settings2.svg" />
+         
+        </div>
+
+        <div class='navIcons-brown'>       
+                <!-- BROWN ICONS -->
+                
+        <img id="home" src="nav-icons/home.svg" />
+        <img id="connections" src="nav-icons/connections.svg" />
+        <img id="chat" src="nav-icons/chat.svg" />
+        <img id="profile" src="nav-icons/profile.svg" />
+        <img id="settings" src="nav-icons/settings.svg" />
+
+        </div>         
+    </div>
+
+    </body>
+    
+    <script>
+
+//nav
+
+            var home = document.getElementById("home");
+            var connect = document.getElementById("connections");
+            var chat = document.getElementById("chat");
+            var profile = document.getElementById("profile");
+            var sett = document.getElementById("settings");
+
+            
+            //WHEN EACH ICON IS CLIKED, IT CHANGES COLOUR (ORANGE), TO SHOW WHAT PAGE THE USER IS ON
+
+          
+            home.onclick = function(){
+                console.log("HOME");
+                home.style.visibility = "hidden";
+                connect.style.visibility = "visible";
+                chat.style.visibility = "visible";
+                profile.style.visibility = "visible";
+                sett.style.visibility = "visible";
+            }
+            
+            connect.onclick = function(){
+                console.log("CONNECT");
+                connect.style.visibility= "hidden";
+                home.style.visibility = "visible";
+                chat.style.visibility = "visible";
+                profile.style.visibility = "visible";
+                sett.style.visibility = "visible";
+            }
+            
+            chat.onclick = function(){
+                console.log("CHAT");
+                chat.style.visibility= "hidden";
+                connect.style.visibility = "visible";
+                home.style.visibility = "visible";
+                profile.style.visibility = "visible";
+                sett.style.visibility = "visible";
+            }
+            
+            profile.onclick = function(){
+                console.log("PROFILE");
+                profile.style.visibility= "hidden";
+                connect.style.visibility = "visible";
+                chat.style.visibility = "visible";
+                home.style.visibility = "visible";
+                sett.style.visibility = "visible";
+            }
+            
+            sett.onclick = function(){
+                console.log("SETTINGS");
+                sett.style.visibility = "hidden";
+                connect.style.visibility = "visible";
+                chat.style.visibility = "visible";
+                profile.style.visibility = "visible";
+                home.style.visibility = "visible";
+            }
+    
+
+    </script>
+</html>
