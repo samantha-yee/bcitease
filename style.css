@@ -1,14 +1,12 @@
 body {
-background: #e2e2e2;
-background: -moz-linear-gradient(top, #e2e2e2 0%, #fefefe 100%);
-background: -webkit-gradient(left top, left bottom, color-stop(0%, #e2e2e2), color-stop(100%, #fefefe));
-background: -webkit-linear-gradient(top, #e2e2e2 0%, #fefefe 100%);
-background: -o-linear-gradient(top, #e2e2e2 0%, #fefefe 100%);
-background: -ms-linear-gradient(top, #e2e2e2 0%, #fefefe 100%);
-background: linear-gradient(to bottom, #e2e2e2 0%, #fefefe 100%);
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e2e2e2', endColorstr='#fefefe', GradientType=0 );
+width: 100vw;
+height: 100vh;
+overflow: hidden;
+background: -webkit-linear-gradient(top,#e2e2e2,#ffffff); /*Safari 5.1-6*/
+background: -o-linear-gradient(top,#e2e2e2,#ffffff); /*Opera 11.1-12*/
+background: -moz-linear-gradient(top,#e2e2e2,#ffffff); /*Fx 3.6-15*/
+background: linear-gradient(to bottom, #e2e2e2, #ffffff); /*Standard*/
 }
-
 /*NAV BAR*/
 
  #navBar {
@@ -54,6 +52,8 @@ img {
 
 
 /*FLIP ANIM*/
+
+
 
 .flip-container {
     position: relative;
