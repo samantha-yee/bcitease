@@ -1,10 +1,12 @@
 body {
-	background-color: darkgrey;
-/*	width: 100vw;
-	height: 100vh;
-	margin: 0;
-	z-index: -1000;*/
-
+background: #e2e2e2;
+background: -moz-linear-gradient(top, #e2e2e2 0%, #fefefe 100%);
+background: -webkit-gradient(left top, left bottom, color-stop(0%, #e2e2e2), color-stop(100%, #fefefe));
+background: -webkit-linear-gradient(top, #e2e2e2 0%, #fefefe 100%);
+background: -o-linear-gradient(top, #e2e2e2 0%, #fefefe 100%);
+background: -ms-linear-gradient(top, #e2e2e2 0%, #fefefe 100%);
+background: linear-gradient(to bottom, #e2e2e2 0%, #fefefe 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e2e2e2', endColorstr='#fefefe', GradientType=0 );
 }
 
 /*NAV BAR*/
@@ -55,22 +57,27 @@ img {
 
 .flip-container {
     position: relative;
-    height: 100%;
-    width: 100%;
+    width: 90%;
     -webkit-transform-style: preserve-3d;
     transform-style: preserve-3d;
     -webkit-transition: all 600ms;
     transition: all 600ms;
     z-index: 20;
+    top: 225px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
 }
 
 .flip-container div {
         position: absolute;
-        height: 100vh;
-        width: 100vw;
+        height: 50vh;
+        width: 90vw;
         background: rgb(36,47,64);
         -webkit-backface-visibility: hidden;
         backface-visibility: hidden;
+        box-shadow: 10px 10px 5px 5px #888888;
     }
 
 .flip-container .profile-back {
@@ -93,15 +100,15 @@ input {
  PROFILE*/
  .profile-front,
  .profile-back {
- 	top: 200px;
+    position: absolute;
+
  }
 
 .photo-style {
  	z-index: 20;
  	background-color: black;
- 	top: 180px;
  	width: 100%;
- 	height: auto;
+ 	height: 75%;
  	overflow: hidden;
  	margin:0;
  }
@@ -113,16 +120,14 @@ input {
  	text-align: center;
  	color: white;
  	z-index: 21;
- 	top: 40%;
+    height: 45vh;
 
 
  }
 
   #profInfo-back {
  	background-color: white;
- 	left: 0;
- 	width: 100vw;
- 	padding: 20px;
+
 
  }
 
